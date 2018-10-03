@@ -359,6 +359,7 @@
         <scene sceneID="QMz-G6-Pi2">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cjy-Fj-7Ay" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="ZIN-jv-Ssv" userLabel="Exit" sceneMemberID="exit"/>
                 <viewController id="v2h-sX-OEO" customClass="ReviewViewController" customModule="FoodPin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pIq-Ig-ux4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -370,6 +371,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iti-cB-z3J" userLabel="Close">
                                 <rect key="frame" x="326" y="30" width="33" height="32"/>
                                 <state key="normal" image="cross"/>
+                                <connections>
+                                    <segue destination="ZIN-jv-Ssv" kind="unwind" unwindAction="closeWithSegue:" id="WAV-Vg-wXo"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VDc-VF-hca">
                                 <rect key="frame" x="74" y="93" width="227" height="481"/>
