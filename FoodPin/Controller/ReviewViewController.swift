@@ -19,18 +19,15 @@ class ReviewViewController: UIViewController {
 
         backgroundImageView.image = UIImage(named: restaurant.image)
         
-        // Do any additional setup after loading the view.
+        // Applying the blur effect
+        let blurEffect = UIBlurEffect(style: .dark)
+        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView.frame = view.bounds
+        
+        // The blurring is not working in iOS 12.1 (16B5068i) beta 2
+        
+        backgroundImageView.addSubview(blurEffectView)
+        
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
 }
