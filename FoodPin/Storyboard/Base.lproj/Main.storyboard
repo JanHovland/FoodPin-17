@@ -421,6 +421,11 @@
                     </view>
                     <connections>
                         <outlet property="backgroundImageView" destination="Tpc-TM-lvY" id="UJP-OP-hpO"/>
+                        <outletCollection property="rateButtons" destination="3NE-qw-ZMC" collectionClass="NSMutableArray" id="ttZ-BB-t92"/>
+                        <outletCollection property="rateButtons" destination="p41-uq-vDT" collectionClass="NSMutableArray" id="NdO-WH-pIm"/>
+                        <outletCollection property="rateButtons" destination="Dia-wr-NH2" collectionClass="NSMutableArray" id="CTH-Ej-R28"/>
+                        <outletCollection property="rateButtons" destination="pMH-sx-h0C" collectionClass="NSMutableArray" id="QJF-pM-bg9"/>
+                        <outletCollection property="rateButtons" destination="o1B-qz-RfB" collectionClass="NSMutableArray" id="951-OG-Zt3"/>
                     </connections>
                 </viewController>
             </objects>
